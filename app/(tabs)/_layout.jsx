@@ -1,10 +1,13 @@
 import { View, Text } from "react-native";
 import React from "react";
+import { Tabs } from "expo-router";
 
-export default function _layout() {
+export default function TabLayout() {
   return (
-    <View>
-      <Text>_layout</Text>
-    </View>
+      <Tabs>
+          <Tabs.Screen name='index'/>
+          <Tabs.Screen name='Add New'/>
+          <Tabs.Screen name='Profile'/>
+    </Tabs>
   );
 }
