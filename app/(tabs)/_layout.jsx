@@ -4,10 +4,14 @@ import { Tabs } from "expo-router";
 
 export default function TabLayout() {
   return (
-      <Tabs>
-          <Tabs.Screen name='index'/>
-          <Tabs.Screen name='Add New'/>
-          <Tabs.Screen name='Profile'/>
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Tabs.Screen name="index" />
+      <Tabs.Screen name="Add New" />
+      <Tabs.Screen name="Profile" />
     </Tabs>
   );
 }
